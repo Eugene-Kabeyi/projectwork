@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="main.css">
+<html>
+    <header>
+        SAVANNAH HEALTHCARE
+    </header>
+    <body>
+        <form action="connectiondb.php" method="POST">
+            <fieldset>
+                <legend style="font-size: 30px;"><b>Patient record</b></legend>
+                
+                <label for="Firstname">First name</label><br>
+                <input type="text" id="Firstname" name="Firstname"><br>
+
+                <label for="Sirname">Sir name</label><br>
+                <input type="text" id="Sirname" name="Sirname"><br>
+
+                <label for="ID">ID number/birth cert</label><br>
+                <input type="text" id="ID" name="ID"><br>
+
+                <label for="ID">Phone number</label><br>
+                <input type="text" id="phone" name="PHONE"><br>
+                
+                <label for="email">Email Address</label><br>
+                <input type="email" id="email" name="email"><br>
+
+                <label for="gender">Gender</label><br>
+                <input type="radio" id="male" name="gender">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender">
+                <label for="female">Female</label><br>
+
+                
+                <label>D.O.B</label>
+                <input type="date" id="date" name="DOB"><br>
+
+                <label for="">Services</label>
+                <select id="medservice" name="service">
+                    <option value="inpatient" >In-patient</option>
+                    <option value="outpatient">out-patient</option>
+                    <option value="Pediatrics">Pediatrics</option>
+                </select><br><br>
+                
+                <label for="">Insuarance</label>
+                <select id="Insuarance" name="Insuarance">
+                    <option value="NHIF">NHIF</option>
+                    <option value="Jubilee">Jubilee</option>
+                    <option value="Britam">Britam</option>
+                    <option value="oldmutual">old mutual</option>
+                </select><br><br><br>
+                <legend>Please comment here</legend>
+                <label for="comments">Comments:</label><br>
+                <textarea name="comments"></textarea><br>
+                <button onclick="myfun()" type="submit" name="btnsubmit" value="submit">submit</button>
+                <script>
+                    function myfun(){
+                        alert("welcome to savannah health care");
+                    }
+                    
+                    
+                </script>
+                
+            </fieldset>
+        </form>
+    </body>
+</html>
