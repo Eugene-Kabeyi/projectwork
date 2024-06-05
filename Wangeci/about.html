@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Savannah Healthcare</title>
+    <style>
+        
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    width: 100%; /* Changed width to 100% */
+    height: 75px;
+    margin: auto;
+    padding-left: 20px; /* Added padding */
+    padding-right: 20px; /* Added padding */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    display: flex; /* Changed display to flex */
+    justify-content: space-between; /* Align items to the start and end */
+    align-items: center; /* Align items vertically */
+}
+
+.icon{
+    height: 70px; /* Removed width */
+}
+
+.logo{
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    margin: 0; /* Removed padding and margin */
+}
+
+.menu{
+    width: auto; /* Changed width to auto */
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Removed margin */
+}
+
+ul li{
+    list-style: none;
+    margin-left: 40px; /* Reduced margin */
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ff7200;
+}
+
+/* Sections */
+.section {
+    color: white; /* Set font color to white */
+    background-color: #fff;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+.section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.section p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Leadership Team */
+.leadership-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.leader {
+    width: 300px;
+    margin: 0 20px 30px;
+    text-align: center;
+}
+
+.leader-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.leader-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.leader-title {
+    color: #777;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Savannah Healthcare</h2>
+            </div>
+
+            <div class="menu">
+                <ul class="nav-menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><strong>ABOUT THE HOSPITAL</strong></h2>
+            <p>
+                Savannah Health Care is a leading healthcare institution dedicated to providing comprehensive and compassionate medical services to our community. Established with a commitment to excellence, our hospital stands as a beacon of health and healing, striving to enhance the well-being of every individual we serve. Savannah Health Care is more than a hospital; it's a trusted partner in your health journey. We strive to create an atmosphere of trust, reliability, and excellence, where your health is our priority. Welcome to a place where healing begins, and wellness thrives – Welcome to Savannah Health Care.
+            </p>
+        </div>
+
+
+        <div class="section">
+            <h2><strong>LEADERSHIP TEAM</strong></h2>
+            <p>
+                The leadership team at Savannah Health Care is comprised of dedicated and experienced professionals, each contributing their expertise to guide the hospital toward its mission of providing exceptional healthcare services. Our team is committed to fostering a culture of excellence, innovation, and patient-centered care.
+            </p>
+            <h2><strong>Executive Leadership:</strong></h2>
+            <div class="leadership-container">
+                <div class="leader">
+                    <img src="CEO.jpg.jpeg" alt="Allan" class="leader-image">
+                    <p class="leader-name">Dr. Allan Rodriguez, MD</p>
+                    <p class="leader-title">Chief Executive Officer (CEO)</p>
+                </div>
+                <div class="leader">
+                    <img src="COO.jpg.jpeg" alt="James" class="leader-image">
+                    <p class="leader-name">Mr. James Thompson</p>
+                    <p class="leader-title">Chief Operating Officer (COO)</p>
+                </div>
+                <div class="leader">
+                    <img src="CMO.jpg.jpeg" alt="Emily" class="leader-image">
+                    <p class="leader-name">Dr. Emily Harris, PhD</p>
+                    <p class="leader-title">Chief Marketing Officer (CMO)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

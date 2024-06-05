@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(44, 73, 84, 0.832);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .title {
+            text-align: center;
+            color: black;
+            font-size: 32px;
+            margin-bottom: 20px;
+            padding: 10px 0;
+        }
+        .welcome {
+            font-size: 24px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .features {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        .features li {
+            margin-bottom: 15px;
+        }
+        .features a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .input-field {
+            margin-top: 20px;
+        }
+        .logout {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .logout a {
+            text-decoration: none;
+            color: green;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            Admin Dashboard
+        </div>
+        <div class="welcome">
+            Welcome, Admin!
+        </div>
+        <ul class="features">
+            <li><a href="Profile.html.php">View Your Profile</a></li>
+            <li><a href="reports.html">View Reports</a></li>
+        </ul>
+        <div class="logout">
+            <a href="logout.php">Logout</a>
+        </div>
+    </div>
+</body>
+</html>

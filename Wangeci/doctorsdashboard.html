@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCTORS DASHBOARD</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .sidebar {
+            background-color: #333;
+            color: #fff;
+            width: 250px;
+            padding: 20px;
+        }
+        .title {
+            text-align: center;
+            color: black;
+            font-size: 32px;
+            margin-bottom: 20px;
+            padding: 10px 0;
+        }
+        .welcome {
+            font-size: 20px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .navigation ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .navigation ul li {
+            margin-bottom: 10px;
+        }
+
+        .navigation ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .logout {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .logout a {
+            text-decoration: none;
+            color: green;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body> 
+    <div class="title">
+    DOCTORS DASHBOARD
+    </div>
+    <div class="sidebar">
+        <div class="welcome">
+            Welcome Back, Doctor
+        </div>
+        <div class="navigation">
+            <ul>
+            <li><a href="docsprofile.php">View Your Profile</a></li>
+            <li><a href="userappoiintment.php">View Patient Appointments</a></li>
+            <li><a href="SimcardActivation.html">Activate Sim Card</a></li>
+            <li><a href="Deactivation.html">Deactivate Sim Card</a></li>
+            <li><a href="#profile">View Profile</a></li>
+            <li><a href="#appointments">Upcoming Appointments</a></li>
+            <li><a href="#pharmacy">Pharmacy</a></li>
+            <li><a href="#update-profile">Update Profile</a></li>
+            <li><a href="#calendar">Calendar</a></li>
+        </ul>
+        <div class="logout">
+            <a href="logout.php">Logout</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>SAVANNAH HEALTHCARE</title>
+    <script>
+        function displayWelcomeMessage() {
+            alert("Welcome to Savannah Health Care");
+        }
+    </script>
+    <style>
+        .wrapper {
+    max-width: 500px;
+    width: 100%;
+    background: #fff; /* White background */
+    margin: 20px auto;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+    padding: 30px;
+}
+
+/* Form title styles */
+.wrapper .title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Form styles */
+.wrapper .form {
+    width: 100%;
+}
+
+/* Input field styles */
+.wrapper .form .inputfield {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .form .inputfield label {
+    width: 200px;
+    color: #757575;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea {
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.wrapper .form .inputfield .textarea {
+    width: 100%;
+    height: 125px;
+    resize: none;
+}
+
+.wrapper .form .inputfield .custom_select {
+    position: relative;
+    width: 100%;
+    height: 37px;
+}
+
+.wrapper .form .inputfield .custom_select:before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+}
+
+.wrapper .form .inputfield .custom_select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #d5dbd9;
+    border-radius: 3px;
+}
+
+.wrapper .form .inputfield .input:focus,
+.wrapper .form .inputfield .textarea:focus,
+.wrapper .form .inputfield .custom_select select:focus {
+    border: 1px solid black;
+}
+
+.wrapper .form .inputfield .btn {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0px;
+    background: green;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+
+.wrapper .form .inputfield .btn:hover {
+    background: green;
+}
+
+.wrapper .form .inputfield:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width:420px) {
+    .wrapper .form .inputfield {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .wrapper .form .inputfield label {
+        margin-bottom: 5px;
+    }
+  
+    .wrapper .form .inputfield.terms {
+        flex-direction: row;
+    }
+}
+.register {
+    color: #000000;
+    text-align: center;
+}
+
+.register a {
+    color: rgb(74, 146, 235);
+    text-decoration: none;
+}
+
+.register a:link {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+  
+
+    <!-- FORM CREATION -->
+    <form action="signup.php" method="POST" style="border: 1px solid#ccc;" onsubmit="displayWelcomeMessage()">
+        <div class="wrapper">
+            <div class="title">
+                PATIENT REGISTRATION FORM
+            </div>
+            <p>Please fill in the form to register an account</p>
+            
+            <div class="form">
+                <div class="inputfield">
+                    <label>First Name</label>
+                    <input type="text" class="input" id="first_name" name="first_name" pattern="[A-Za-z]+" required>
+                </div>
+                
+                <div class="inputfield">
+                    <label>Last Name</label>
+                    <input type="text" class="input" id="lastname" name="last_name" pattern="[A-Za-z]+" required>
+                </div>
+
+                <div class="inputfield">
+                    <label for="cert_idnumber">ID Number/Birth Certificate</label>
+                    <input type="text" class="input" id="cert_idnumber" name="cert_idnumber" accept=".pdf, .doc, .docx" required>
+                </div>
+                
+
+                <div class="inputfield">
+                    <label for="phone">Mobile Number</label>
+                    <input type="text" class="input" id="phone_number" name="phone_number" pattern="[0-9]+" placeholder="Enter Phone Number" required>
+                </div>
+
+                <div class="inputfield">
+                    <label>Email Address</label>
+                    <input type="email" class="input" name="email" required>
+                </div>
+
+                <div class="inputfield">
+                    <label>Gender</label>
+                    <div class="custom_select">
+                        <select name="gender">
+                            <option value="" disabled selected>Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="inputfield">
+                    <label for="dateOfBirth">Date of Birth</label>
+                    <input type="date" class="input" id="dateOfBirth" name="date_of_birth" required>
+                </div>
+
+                <div class="inputfield">
+                    <label for="medservice">Services</label>
+                    <select id="medservice"  class="input"   name="medservice" required>
+                        <option value="">Select Medical service</option>
+                        <option value="inpatient">In-patient</option>
+                        <option value="outpatient">Out-patient</option>
+                        <option value="Pediatrics">Pediatrics</option>
+                    </select>
+                </div>
+
+                <div class="inputfield">
+                    <label>Password</label>
+                    <input type="password" class="input" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                    </div>
+                    <div class="inputfield">
+                      <label>Confirm Password</label>
+                      <input type="password" class="input" name="confirm_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                    </div>  
+
+                <div class="inputfield">
+                    <input type="submit" value="Submit" class="btn">
+                </div>
+                <p class="register"><strong>Have an account?</strong><a href="index.html">Login here!</a></p>
+
+            </div>
+        </div>
+
+        <script>
+            var myInput = document.getElementById("password");
+            var letter = document.getElementById("letter");
+            var capital = document.getElementById("capital");
+            var number = document.getElementById("number");
+            var length = document.getElementById("length");
+            
+            // When the user clicks on the password field, show the message box
+            myInput.onfocus = function() {
+              document.getElementById("message").style.display = "block";
+            }
+            
+            // When the user clicks outside of the password field, hide the message box
+            myInput.onblur = function() {
+              document.getElementById("message").style.display = "none";
+            }
+            
+            // When the user starts to type something inside the password field
+            myInput.onkeyup = function() {
+              // Validate lowercase letters
+              var lowerCaseLetters = /[a-z]/g;
+              if(myInput.value.match(lowerCaseLetters)) {
+                letter.classList.remove("invalid");
+                letter.classList.add("valid");
+              } else {
+                letter.classList.remove("valid");
+                letter.classList.add("invalid");
+            }
+            
+              // Validate capital letters
+              var upperCaseLetters = /[A-Z]/g;
+              if(myInput.value.match(upperCaseLetters)) {
+                capital.classList.remove("invalid");
+                capital.classList.add("valid");
+              } else {
+                capital.classList.remove("valid");
+                capital.classList.add("invalid");
+              }
+            
+              // Validate numbers
+              var numbers = /[0-9]/g;
+              if(myInput.value.match(numbers)) {
+                number.classList.remove("invalid");
+                number.classList.add("valid");
+              } else {
+                number.classList.remove("valid");
+                number.classList.add("invalid");
+              }
+            
+              // Validate length
+              if(myInput.value.length >= 8) {
+                length.classList.remove("invalid");
+                length.classList.add("valid");
+              } else {
+                length.classList.remove("valid");
+                length.classList.add("invalid");
+              }
+            }
+            </script>
+            
+            <script src="js/Signup.js">
+                function validateForm() {
+                    var inputs = document.querySelectorAll('.validate');
+            
+                    for (var i = 0; i < inputs.length; i++) {
+                        var input = inputs[i];
+                        var dataType = input.getAttribute('data-type');
+                        var value = input.value;
+            
+                        var isValid = false;
+            
+                        switch (dataType) {
+                            case 'email':
+                                isValid = validateEmail(value);
+                                break;
+                        }
+            
+                        if (!isValid) {
+                            input.focus();
+                            return;
+                        }
+                    }
+            
+                    // If all inputs are valid, submit the form or perform other actions.
+                    alert("Form submitted successfully!");
+                }
+            
+                function validateEmail(inputText) {
+                    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                    return inputText.match(mailformat);
+                }
+            
+                function validatePhoneNumber(inputText) {
+                    var phoneFormat = /^\+?\d{1,4}\s?\d{3,}(?:[\s-]\d{2,})*$/;
+                    return inputText.match(phoneFormat);
+                }
+            
+                function validateAddress(inputText) {
+                    var addressFormat = /^[A-Za-z0-9\s]+,\s[A-Za-z\s]+$/;
+                    return inputText.match(addressFormat);
+                }
+    </script>
+                
+    </form>
+</body>
+</html>

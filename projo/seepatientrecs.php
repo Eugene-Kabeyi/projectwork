@@ -1,6 +1,7 @@
+
 <?php
 $conn = mysqli_connect("localhost","root","","hospital");
-$sql="SELECT `id`, `firstname`, `sirname`, `gender`, `dob`, `email`, `phone`, `insuarance`, `comments` FROM `patient` WHERE 1";
+$sql="SELECT `id_num`, `firstname`, `sirname`, `gender`, `dob`, `email`, `phonenumber`, `service`, `insuarance`, `comments` FROM `patients` WHERE 1";
 
 $result= mysqli_query($conn,$sql);
 if($result){
@@ -23,18 +24,14 @@ if($result){
 
         while ($row= mysqli_fetch_array($result)){
             echo "<tr>";
-            echo "<td>".$row['id']."</td>";
+            echo "<td>".$row['id_num']."</td>";
             echo "<td>".$row['firstname']."</td>";
             echo "<td>".$row['sirname']."</td>";
             echo "<td>".$row['gender']."</td>";
             echo "<td>".$row['dob']."</td>";
             echo "<td>".$row['email']."</td>";
-            echo "<td>".$row['phone']."</td>";
+            echo "<td>".$row['phonenumber']."</td>";
             echo "<td>".$row['insuarance']."</td>";
-
-
-
-
 
             echo "</tr>";
         }
@@ -48,3 +45,19 @@ if($result){
     echo "Error executing query $sql".mysqli_error($conn);
 }
 
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="seesinglepatients.php" method= "post">
+        <label for="filter">Enter patient id number or birth certificate number </label><br>
+        <input type="text" id="idnum" name = "idnum">
+        <button type="submit" name="filter" value="filter"></button>
+    </form>
+</body>
+</html>

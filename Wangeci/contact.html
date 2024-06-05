@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Savannah Healthcare</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white; /* Change font color to white */
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around; /* Distribute items evenly along the main axis */
+            align-items: flex-start;
+            color: white; /* Change font color to white */
+            margin-top: 50px; /* Adjust margin to prevent overlapping with the logo */
+        }
+
+        .textbox {
+            flex-basis: 30%; /* Set width of each column */
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .textbox h1 {
+            margin-top: 0;
+            font-size: 20px; /* Reduce h1 font size */
+            text-align: center;
+        }
+
+        .textbox h2 {
+            margin-top: 0;
+        }
+
+        .textbox p {
+            margin-bottom: 10px;
+            color: white; /* Change font color to white */
+        }
+
+        .textbox p:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .textbox {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Savannah Healthcare</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="contact_us.html">CONTACT</a></li> 
+                </ul>
+            </div>
+
+            
+
+        </div> 
+        
+        <!-- Contact Us content starts here -->
+        <div class="content">
+            <div class="textbox">
+                <h1>Emergency Contacts</h1>
+                <address>
+                    <h3>Hospital Emergency Number</h3>
+                    <p>Call:<a href="tel:0722-911-911">0722-911-911</a> (Toll-free)</p>
+
+                    <h3>Ambulance Service:</h3>
+                    <p>Call <a href="tel:0723-911-911">0723-911-911</a> (Toll-free)</p>
+                    <h3>Ambulance Service:</h3>
+                    <p>Call <a href="tel:0723-341-341">0723-341-341</a> (Toll-free)</p>
+                </address>
+            </div>
+            <div class="textbox">
+                <h1>General Contact Information</h1>
+                <address>
+                    <h2>Main Hospital:</h2>
+                    <p>Savannah Healthcare System</p>
+                    <p>123 Hospital Way</p>
+                    <p>Nairobi, KE 31401</p>
+                    <p>Phone: (+253) 745-690-789</p>
+                    <p>Email: <a href="mailto:info@savannahhealthcare.com">info@savannahhealthcare.com</a></p>
+                </address>
+            </div>
+            <div class="textbox">
+                <h1>Other Inquiries</h1>
+                <address>
+                    <h2>Human Resources:</h2>
+                    <p>Phone: (+253) 722-601-789 Ext. 263</p>
+                    <p>Email: <a href="mailto:hr@savannahhealthcare.com">hr@savannahhealthcare.com</a></p>
+
+                    <h2>Finance Department:</h2>
+                    <p>Phone: (+253) 722-601-700 Ext. 456</p>
+                    <p>Email: <a href="mailto:finance@savannahhealthcare.com">finance@savannahhealthcare

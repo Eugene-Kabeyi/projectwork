@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .sidebar {
+            background-color: #333;
+            color: #fff;
+            width: 250px;
+            padding: 20px;
+        }
+
+        .welcome-message {
+            margin-bottom: 20px;
+        }
+
+        .navigation ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .navigation ul li {
+            margin-bottom: 10px;
+        }
+
+        .navigation ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .hospital-analytics,
+        .upcoming-appointments {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="welcome-message">
+            <h2>Welcome back, Doctor!</h2>
+        </div>
+        <div class="navigation">
+            <ul>
+                <li><a href="#profile">View Profile</a></li>
+                <li><a href="#appointments">Upcoming Appointments</a></li>
+                <li><a href="#pharmacy">Pharmacy</a></li>
+                <li><a href="#update-profile">Update Profile</a></li>
+                <li><a href="#calendar">Calendar</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--
+    <div class="main-content">
+       <div class="hospital-analytics">
+            < Hospital analytics will be fetched dynamically
+        </div>
+        <div class="upcoming-appointments">
+            Upcoming appointments will be fetched dynamically 
+        </div>
+    </div>
+    -->
+    <script src="script.js"></script>
+</body>
+</html>
