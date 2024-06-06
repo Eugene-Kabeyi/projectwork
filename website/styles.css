@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'poppins';
+    src: url('fonts/Poppins-Regular.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/back-image.png);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+    position: relative;
+}
+.hero nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+.hero nav .logo{
+    width: 140px;
+}
+.hero nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+.hero nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    
+}
+.hero nav .top .log-inbtn{
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px 0 0;
+    font-weight: 400;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: #fff;
+    background: linear-gradient(45deg, #df4881, #c430d7);
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    -webkit-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+.hero .content{
+    margin: 10% 0 0 0;
+    max-width: 600px;
+
+}
+.hero .content h1{
+    font-size: 70px;
+    color: #222;
+
+}
+.hero .content p{
+    margin: 10px 0 30px;
+    color: #333;
+    animation-delay: 0.5s;
+}
+.hero .content .btn{
+    padding: 15px 80px;
+    font-size: 16px;
+    -webkit-transition: all .5s ease-in !important;
+    -o-transition: all .5s ease-in !important;
+    -moz-transition: all .5s ease-in !important;
+    transition: all .5s !important;
+    animation-delay: 1s;
+}
+
+.hero .content .btn:hover,.btn:hover{
+    border-top-right-radius: 30px;
+    -webkit-transition: all .5s ease-in !important;
+    -o-transition: all .5s ease-in !important;
+    -moz-transition: all .5s ease-in !important;
+    transition: all .5s ease-in !important;
+    transform: scale(1.2) !important;
+}
+.feature-img{
+    width: 530px;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    top: 70px;
+}
+.feature-img.anim{
+ animation-delay: 1.5s;
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
