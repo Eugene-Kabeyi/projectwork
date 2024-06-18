@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'luckiest-guy';
+    src: url('fonts/LuckiestGuy-Regular.ttf');
+}
+body{
+    background-color: #fffc00;
+    display: flex;
+    text-transform: uppercase;
+    font-family: 'luckiest-guy';
+    justify-content: center;
+}
+h1{
+    color: #fff;
+    font-size: 8em;
+    text-shadow: 0 0.1em 20px #000, 
+                 0.05em -0.03em 0 #000,
+                 0.05em 0.005em 0 #000,
+                 0em 0.08em 0 #000,
+                 0.05em 0.08em 0 #000,
+                 0 -0.03em 0 #000,
+                 -0.03em -0.03em 0 #000,
+                 -0.03em 0.08em 0 #000, 
+                 -0.03em 0 0 #000;
+}
+h1 span{
+    display: inline-block;
+}
+h1 span:first-child{
+    animation: pop 1s infinite alternate;
+}
+h1 span:last-child{
+    animation: rotatepop 1s 0.2s infinite alternate;
+}
+@keyframes pop {
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+}
+@keyframes rotatepop {
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1) rotate(-7deg);
+    }
+}
