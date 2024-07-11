@@ -3,7 +3,7 @@
     src: url('fonts/LuckiestGuy-Regular.ttf');
 }
 body{
-    background-color: #fffc00;
+    /* background-color: #fffc00; */
     display: flex;
     text-transform: uppercase;
     font-family: 'luckiest-guy';
@@ -31,6 +31,17 @@ h1 span:first-child{
 h1 span:last-child{
     animation: rotatepop 1s 0.2s infinite alternate;
 }
+.hero .swiper .swiper-wrapper{
+    width: 1346px;
+    height: 500px;
+}
+.hero .swiper .swiper-wrapper .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: centre;
+}
+
 @keyframes pop {
     0%{
         transform: scale(0.5);

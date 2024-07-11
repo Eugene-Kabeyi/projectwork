@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="styles.css">
     <!--Boxicon remote link-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
     <title>Mrs. Groceries</title>
     <link rel="shortcut icon" href="">
 </head>
@@ -17,13 +22,65 @@
     <header>
         <!--Menu logo-->
         <a href="#" class="logo"><i class='bx bxs-basket'></i>Delicacy</a>
-        <div class="bx bx-menu" id="menu-icon">
-            <!--nav list-->
-            <ul class="navbar">
-                <li><a href="#home" class="home-active"></a></li>
-            </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <!--nav list-->
+        <ul class="navbar">
+            <li><a href="#home" class="home-active">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#customers">Customers</a></li>
+        </ul>
+        <!--Profile-->
+        <div class="profile">
+            <img src="images\picsss.webp" alt="">
+            <span>John Lookman</span>
+            <i class='bx bx-caret-down'></i>
         </div>
+
     </header>
+    <section class="home swiper" id="home">
+        <div class="swiper-wrapper">
+            <!--Slide 1-->
+            <div class="swiper-slide container">
+                <div class="home-text">
+                    <span>We are a delicacy</span>
+                    <h1>Choose delicacy <br> the best healthy <br> chicken salad</h1>
+                    <a href="#" class="btn">Shop now <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <img src="images\fresh-fruit-berry-salad-healthy-eating.png" alt="">
+            </div>
+            <!--Slide 2-->
+            <div class="swiper-slide container">
+                <div class="home-text">
+                    <span>We are a delicacy</span>
+                    <h1>Choose delicacy <br> the best healthy <br> chicken salad</h1>
+                    <a href="#" class="btn">Shop now <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <img src="images\fruits-berries-platter-vegan-cuisine.png" alt="">
+            </div>
+             <!--Slide 3-->
+        <div class="swiper-slide container">
+            <div class="home-text">
+                <span>We are a delicacy</span>
+                <h1>Choose delicacy <br> the best healthy <br> chicken salad</h1>
+                <a href="#" class="btn">Shop now <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+            <img src="images\bowl-tasty-fruit-salad-near-pieces-strawberry-kiwi-white-background.png" alt="">
+        </div>
+        </div>
+       
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+
+    </section>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--Link to JS-->
+    <script src="main.js"></script>
 
 </body>
 
